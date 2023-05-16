@@ -1,0 +1,139 @@
+*{
+    font-family: monospace;    
+}
+
+body{
+    background-color: #123;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#mainHeader{
+    color: #fff;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* SVG MAP GRAPHICS ----------------------------------------------- */
+svg{
+    height: 95vh;
+    width: 95vh;
+    
+    position: absolute;
+}
+
+.cls-0 { /*base style for all svg paths*/ 
+    stroke: #fff;
+    stroke-width: 5px;
+    fill-rule: evenodd;
+
+    transition: .13s ease-in-out;
+}
+
+
+.cls-1{ /*map background*/
+    fill:#040;
+}
+
+.cls-2{ /*foreground areas*/
+    fill: #182060;
+}
+
+.cls-3{ /*foreground hover*/
+    fill: #0f0;
+    cursor: pointer;
+}
+/* INFOBOXES ----------------------------------------------- */
+
+#infoBox{
+    outline: none;
+
+    position: absolute;
+    background-color: #fff;
+    top: 7vh;
+
+    font-weight: bold;
+    font-size: 1.9rem;
+    padding-left: 10px;
+
+    height: 2.5rem;
+    border: 1px solid #000;
+    border-radius: 70px;
+}
+#resultBox{
+    position: absolute;
+    top: 13.5vh;
+    min-height: 5rem;
+
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-top: 5px;
+
+    background-color: #eef;
+    border: #99f solid 2px;
+    border-radius: 10px;
+}
+
+/* POINTER ----------------------------------------------- */   
+#pointer{
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+
+    z-index: 10;
+    user-select: none;
+}
+
+/* MAIN PAGE DIV ----------------------------------------------- */
+#fnv{
+    background-color: #72f3fe;
+
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s ease-in-out;
+
+    position: absolute;
+
+    top: 15vh;
+
+    transition: ease-in-out;
+}
+
+#fnv:hover{
+    cursor: pointer;
+}
+
+.fnvselect{
+    position: absolute;
+    background-color: #0ff;
+}
+
+#1{
+    top: 70vh;
+}
